@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Job Search Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Custom Job Search Tool</h1>
+    </header>
+    <main>
+        <section class="search-section">
+            <h2>Find Your Dream Job</h2>
+            <form id="job-search-form">
+                <div class="form-group">
+                    <label for="job-title">Job Title</label>
+                    <input type="text" id="job-title" name="job-title" placeholder="Product Manager, Web Developer, etc.">
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" placeholder="Remote, New York, etc.">
+                </div>
+                <div class="form-group">
+                    <label for="industry">Industry</label>
+                    <input type="text" id="industry" name="industry" placeholder="Web3, Fintech, etc.">
+                </div>
+                <div class="form-group">
+                    <label for="experience-level">Experience Level</label>
+                    <select id="experience-level" name="experience-level">
+                        <option value="entry">Entry</option>
+                        <option value="mid">Mid</option>
+                        <option value="senior">Senior</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="salary-range">Salary Range</label>
+                    <input type="text" id="salary-range" name="salary-range" placeholder="$60,000 - $100,000">
+                </div>
+                <button type="submit">Search Jobs</button>
+            </form>
+        </section>
+        <section class="results-section">
+            <h2>Job Listings</h2>
+            <div id="job-results">
+                <!-- Job results will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Custom Job Search Tool</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
